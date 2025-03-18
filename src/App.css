@@ -1,0 +1,34 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la pantalla */
+  width: 100vw;  /* Asegura que ocupa todo el ancho */
+}
+
+.idiomas {
+  display: flex;
+  gap: 10px;
+}
+
+.profesorInfo img {
+  width: 200px; /* Cambia el tamaño según lo necesites */
+  height: auto; /* Mantiene la proporción */
+}
+
+.profesorInfo{
+  background-color: #008080;
+  width: 400px;
+ align-items: center;
+ text-align: center;
+ border-radius: 5px;
+}
