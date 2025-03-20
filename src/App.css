@@ -32,3 +32,20 @@ html, body {
  text-align: center;
  border-radius: 5px;
 }
+
+.profesorInfo.visible{
+  display: block;
+
+
+}
+.profesorInfo.oculto{
+  display: none;
+}
+
+.lugar.visible{
+  display: block;
+}
+
+.lugar.oculto{
+  display:none;
+}

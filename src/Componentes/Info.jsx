@@ -4,17 +4,15 @@ import { ElContexto } from '../Contexto/MiContexto'
 import '../App.css';
 
 function Info() {
-  const {valores} = useContext(ElContexto);
-  const infoShow = ()=>{
-    
-  }
+  const {valores,showInfo,setShowInfo,lugarInfo, setLugarInfo} = useContext(ElContexto);
+  
   return (
     <div className='profesor'>
       <h2>{valores[0].titulo}</h2>
       <h3>{valores[0].texto}</h3>
       <div className='buttons'>
-     <button onClick={infoShow}>{valores[0].boton1}</button>  
-     <button>{valores[0].boton2}</button>  
+     <button onClick={()=>setShowInfo(!showInfo)}>{valores[0].boton1}</button>  
+     <button onClick={()=>setLugarInfo(!lugarInfo)}>{valores[0].boton2}</button>  
       </div>
     </div>
   )

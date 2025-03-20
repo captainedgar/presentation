@@ -4,6 +4,7 @@ import { InfoProvider } from './Contexto/MiContexto';
 import Idioma from './Componentes/Idioma';
 import Info from './Componentes/Info';
 import Profesor from './Componentes/Profesor';
+import Lugar from './Componentes/Lugar';
 
 function App() {
  
@@ -19,6 +20,7 @@ function App() {
 
     <div>
       <Profesor/>
+      <Lugar/>
     </div>
     </div>
 

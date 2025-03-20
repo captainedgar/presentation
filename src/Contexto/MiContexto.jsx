@@ -34,10 +34,13 @@ export const InfoProvider = ({children}) =>{
         },{
             idioma:0
         }]
-    )
+    );
+
+    const [showInfo, setShowInfo]=useState(false);
+    const [lugarInfo, setLugarInfo]=useState(false);
 
     return (
-        <ElContexto.Provider value={{valores, setValores}}>
+        <ElContexto.Provider value={{valores, setValores, showInfo,setShowInfo, lugarInfo,setLugarInfo}}>
             {children}
         </ElContexto.Provider>
     );
